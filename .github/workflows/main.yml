@@ -9,4 +9,4 @@ jobs:
       id: a11y
       uses: omboo/a11y-action@v0.1
       with:
-        urls: 'http://omboo.io'
+        urls: 'http://omboo.io,https://google.com'
