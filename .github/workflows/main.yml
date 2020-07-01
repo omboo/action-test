@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Run a11y tests 
       id: a11y
-      uses: omboo/a11y-action@v0.2.1
+      uses: omboo/a11y-action@v0.2.2
       with:
         urls: 'http://omboo.io'
         fail-on-error: false
