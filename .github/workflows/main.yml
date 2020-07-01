@@ -3,11 +3,11 @@ on: [pull_request]
 jobs:
   accessibility_job:
     runs-on: ubuntu-latest
-    name: Runs accessibility tests
+    name: Accessibility tests
     steps:
     - name: Run a11y tests 
       id: a11y
       uses: omboo/a11y-action@v0.2.3
       with:
         urls: 'http://omboo.io'
-        fail-on-error: false
+        fail-on-error: true
