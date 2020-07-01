@@ -10,3 +10,4 @@ jobs:
       uses: omboo/a11y-action@v0.2
       with:
         urls: 'http://omboo.io,https://google.com'
+        fail-on-error: false
