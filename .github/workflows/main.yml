@@ -9,7 +9,8 @@ jobs:
       uses: actions/checkout@v1
     - name: Run a11y tests 
       id: a11y
-      uses: omboo/a11y-action@v0.2.3
+      uses: omboo/a11y-action@v0.2.4
       with:
         urls: 'http://omboo.io'
         fail-on-error: true
+        install: true
