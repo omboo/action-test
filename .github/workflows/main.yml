@@ -14,7 +14,7 @@ jobs:
         id: a11y
         uses: omboo/a11y-action@master
         with:
-          urls: "http://127.0.0.1:8080"
+          urls: "http://localhost:3000"
           fail-on-error: true
-          wait-on: "http://127.0.0.1:8080"
+          wait-on: "http://localhost:3000"
           wait-on-timeout: 20
