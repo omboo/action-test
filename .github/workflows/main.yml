@@ -5,15 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     name: Accessibility tests
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    - uses: bahmutov/npm-install@v1
-    - name: Start server in the background
-      run: npm start &
-    - name: Run a11y tests 
-      id: a11y
-      uses: omboo/a11y-action@master
-      with:
-        urls: 'http://127.0.0.1:8080'
-        fail-on-error: true
-        isntall: false
+      - name: Checkout
+        uses: actions/checkout@v1
+      - uses: bahmutov/npm-install@v1
+      - name: Start server in the background
+        run: npm start &
+      - name: Run a11y tests
+        id: a11y
+        uses: omboo/a11y-action@master
+        with:
+          urls: "http://127.0.0.1:8080"
+          fail-on-error: true
+          wait-on: "http://127.0.0.1:8080"
+          wait-on-timeout: 20
