@@ -14,6 +14,6 @@ jobs:
       id: a11y
       uses: omboo/a11y-action@master
       with:
-        urls: 'http://localhost:8080'
+        urls: 'http://127.0.0.1:8080'
         fail-on-error: true
         isntall: false
