@@ -14,3 +14,6 @@ jobs:
         with:
           urls: "http://omboo.io"
           fail-on-error: true
+          start-command: "npm start"
+          wait-on: "http://localhost:3000"
+          wait-on-timeout: 20
