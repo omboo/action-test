@@ -12,8 +12,5 @@ jobs:
         id: a11y
         uses: omboo/a11y-action@master
         with:
-          urls: "http://localhost:3000,http://omboo.io"
+          urls: "http://omboo.io"
           fail-on-error: true
-          start-command: "npm start"
-          wait-on: "http://localhost:3000"
-          wait-on-timeout: 20
